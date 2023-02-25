@@ -1,4 +1,15 @@
-<meta charset="UTF-8">
+<html>
+    <header>
+        <title>
+            Utilizando Java Script
+        </title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="assets/java.js"></script>
+    </header>
+    <body>
+
+    </body>
+</html>
 <?php
 
 require "info.php"
