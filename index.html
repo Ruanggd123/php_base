@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <title>
+            Utilizando Java Script
+        </title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="assets/java.js"></script>
+    </header>
+    <body>
+        Utilização de java script<br>
+        <button onclick="window.location.href='info.php';">
+            clique aqui para ir ao google!<br>
+        </button>
+        <button onclick="window.location.href=window.location.href;">
+            Atualizar a página
+        </button>
+        <div id="area">
+            Valor da div...
+        </div>
+        <div id="area2">
+            Função
+        </div>
+        <button onclick="this.innerHTML=prompt('Qual o nome para o botão');">
+                fazer ação
+        </button>
+        <button onclick="fuc('ruan', '21')">
+                Função
+        </button>
+        <form method="POST" action="info.php">
+            Informe o email:<br>
+            <input type="text" name="email"/><br><br>
+            Informa a senha:<br>
+            <input type="text" name="senha"/><br><br>
+            <input type="submit" name="enviar"/>
+        <form>
+        
+            <h3>Receita de bolos</h3>
+            <input type="text" id="ingrediente"/>
+            <button onclick="adicionarI()"> Adicionar</button><br><br>
+        <ul id="lista">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </body>
+</html>
+
+
