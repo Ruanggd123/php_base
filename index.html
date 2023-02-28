@@ -1,3 +1,4 @@
+
 <html>
     <header>
         <title>
@@ -5,43 +6,42 @@
         </title>
         <meta charset="UTF-8">
         <script type="text/javascript" src="assets/java.js"></script>
+        <style type="text/css">
+            #n1{ width: 200px; height: 200px; border: 1px solid #000; 
+                 float: left; margin-right: 10px; font-size: 100px; text-align: center;
+                 line-height: 200px; background-color: #eee;
+            }
+            #n2{ width: 200px; height: 200px; border: 1px solid #000; 
+                 float: left; margin-right: 10px; font-size: 100px; text-align: center;
+                 line-height: 200px; background-color: #eee;
+            }
+            #n3{
+                width: 410px; height: 40px; margin-top: 10px; font-size: 20px; 
+            }
+        </style>
     </header>
-    <body>
-        Utilização de java script<br>
-        <button onclick="window.location.href='info.php';">
-            clique aqui para ir ao google!<br>
-        </button>
-        <button onclick="window.location.href=window.location.href;">
-            Atualizar a página
-        </button>
-        <div id="area">
-            Valor da div...
-        </div>
-        <div id="area2">
-            Função
-        </div>
-        <button onclick="this.innerHTML=prompt('Qual o nome para o botão');">
-                fazer ação
-        </button>
-        <button onclick="fuc('ruan', '21')">
-                Função
-        </button>
-        <form method="POST" action="info.php">
-            Informe o email:<br>
-            <input type="text" name="email"/><br><br>
-            Informa a senha:<br>
-            <input type="text" name="senha"/><br><br>
-            <input type="submit" name="enviar"/>
-        <form>
-        
-            <h3>Receita de bolos</h3>
+    <body onload="reset()">
+            <h3>Receita de bolo</h3>
+
             <input type="text" id="ingrediente"/>
-            <button onclick="adicionarI()"> Adicionar</button><br><br>
+            <button onclick="adicionarI()"> Adicionar </button><br><br>
         <ul id="lista">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
+        <input type="text" name="num1" id="num1"/> + 
+        <input type="text" name="num2" id="num2"/>
+        <button onclick="valorsoma()"> Somar</button><br>
+
+        <h1>Resultado:</h1>
+        <h2 id="valor"></h2>
+
+        <h1>Mine jogo Utilizando java</h1>
+        <div id="n1"> 0 </div>
+        <input type="text" id="n2">
+        <div style="clear:both"></div>
+        <button onclick="verificar()" id="n3">verificar</button>
     </body>
 </html>
 
